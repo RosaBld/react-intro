@@ -1,10 +1,17 @@
-export function List () {
-    const todos=["Learn React", "Be Awesome", "Stay Zen"]
+import React, { useState } from "react";
+
+export default function List () {
+    const initialTodos=["Learn React", "Be Awesome", "Stay Zen"]
+    const [todos, setTodos] = useState(initialTodos);
+        // === const myState=useState(initialTodos);
+        //  +  const todos=myState[0];
+        //  +  const setTodos=myState[1];
+    
     return (
         <div className="list">
             <h2>Todos</h2>
             {todos.map((todo) => (
-                <div>
+                <div key={todo}>
                     <input type="checkbox" className="Check" /> {todo}
                 </div>
             ))}
