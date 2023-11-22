@@ -1,6 +1,6 @@
 import './App.css';
-import Adding from './Adding.js';
-import { List } from './List.js';
+import Adding from './Adding.jsx';
+import { List } from './List.jsx';
 
 function App() {
   return (

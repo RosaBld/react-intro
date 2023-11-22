@@ -1,16 +1,16 @@
-.App {
-  text-align: center;
-}
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: white;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .App-header {
@@ -31,19 +31,19 @@
 .Adding {
   display: flex;
   flex-direction: column;
-  margin: 10vh 10vh 0vh 10vh;
+  margin: 10vh 10vh 0vh 0vh;
   gap: 3vh;
   padding-bottom: 5vh;
   border-bottom: 1px solid rgb(221, 221, 221);
   input {
-    max-width: 80vh;
+    max-width: 60vh;
     height: 8vh;
     border-radius: 5px;
     background-color:#F6F8FA;
     border: rgb(230, 230, 230) 1px solid;
   }
   button {
-    max-width: 40vh;
+    max-width: 30vh;
     height: 10vh;
     border: none;
     border-radius: 5px;
@@ -55,20 +55,21 @@
 
 .list {
   text-align: left;
-  margin-left: 10vh;
+  margin-left: 0vh;
   display: flex;
   flex-direction: column;
+  color: black;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* @media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
   }
-  to {
-    transform: rotate(360deg);
+  a:hover {
+    color: #747bff;
   }
-}
+  button {
+    background-color: #f9f9f9;
+  }
+} */
