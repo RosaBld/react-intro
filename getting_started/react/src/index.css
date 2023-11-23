@@ -62,6 +62,20 @@
     padding-left: 0vh;
     li {
       list-style-type:none;
+      display: flex;
+      flex-direction: row;
+      gap: 5vh;
+      span {
+        width: 50vh;
+      }
+      .Dates {
+        display: flex;
+        flex-direction: row;
+        gap: 5vh;
+        .fromTo {
+          width: 50vh;
+        }
+      }
     }
   }
 }
