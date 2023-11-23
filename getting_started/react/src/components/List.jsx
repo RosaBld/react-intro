@@ -1,11 +1,12 @@
 import React from "react";
 
+
     // const initialTodos=["Learn React", "Be Awesome", "Stay Zen"]
     // const [todos, setTodos] = useState(initialTodos);
         // === const myState=useState(initialTodos);
         //  +  const todos=myState[0];
         //  +  const setTodos=myState[1];
-let List=({todos, checkboxChange}) => {
+let List=({todos, checkboxChange, setTodos}) => {
     const taskStyle = {
         textDecoration:"line-through"
     };

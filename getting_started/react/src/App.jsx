@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import Adding from './components/Adding.jsx';
 import List from './components/List.jsx';
+import DeleteTask from './components/DeleteTask.jsx';
 
 const LSKEY="MyTodoApp";
 
@@ -33,8 +34,8 @@ function App() {
         <h1>My Todo App</h1>
       </header>
         <Adding addTask={addTask} />
-        
-        <List todos = {todos} checkboxChange={checkboxChange} />
+        <DeleteTask setTodos={setTodos}/>
+        <List todos = {todos} setTodos={setTodos} checkboxChange={checkboxChange} />
     </div>
   );
 }
