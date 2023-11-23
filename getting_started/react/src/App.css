@@ -18,53 +18,6 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 } */
 
-.App-header {
-  background-color: #F6F8FA;
-  min-height: 20vh;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: black;
-  border-bottom: 1px solid rgb(221, 221, 221);
-  h1 {
-    margin-left: 10vh;
-  }
-}
-
-.Adding {
-  display: flex;
-  flex-direction: column;
-  margin: 10vh 10vh 0vh 10vh;
-  gap: 3vh;
-  padding-bottom: 5vh;
-  border-bottom: 1px solid rgb(221, 221, 221);
-  input {
-    max-width: 80vh;
-    height: 8vh;
-    border-radius: 5px;
-    background-color:#F6F8FA;
-    border: rgb(230, 230, 230) 1px solid;
-  }
-  button {
-    max-width: 40vh;
-    height: 10vh;
-    border: none;
-    border-radius: 5px;
-    background: #2273EB;
-    color: white;
-    font-size: 5vmin;
-  }
-}
-
-.list {
-  text-align: left;
-  margin-left: 10vh;
-  display: flex;
-  flex-direction: column;
-}
-
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);

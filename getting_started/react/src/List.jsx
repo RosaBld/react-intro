@@ -10,10 +10,10 @@ export default function List () {
     return (
         <div className="list">
             <h2>Todos</h2>
-            {todos.map((todo) => (
-                <div key={todo}>
-                    <input type="checkbox" className="Check" /> {todo}
-                </div>
+            {todos.map((todo, index) => (
+                <ul key={index}>
+                    <li><input type="checkbox" className="Check" /> {todo.task}</li>
+                </ul>
             ))}
 
             {/* <div>
