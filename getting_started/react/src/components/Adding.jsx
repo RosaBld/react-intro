@@ -33,11 +33,13 @@ function Adding({addTask}) {
           <input
             type="date"
             value={fromDate}
+            className="from"
             onChange={(e)=>setFromDate(e.target.value)}
           />
           <input
             type="date"
             value={toDate}
+            className="to"
             onChange={(e) => setToDate(e.target.value)}
           />
 

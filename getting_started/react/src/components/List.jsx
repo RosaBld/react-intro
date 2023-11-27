@@ -1,12 +1,11 @@
-import React from "react";
-
-
-    // const initialTodos=["Learn React", "Be Awesome", "Stay Zen"]
-    // const [todos, setTodos] = useState(initialTodos);
+import React, { useState } from "react";
         // === const myState=useState(initialTodos);
         //  +  const todos=myState[0];
         //  +  const setTodos=myState[1];
-let List=({todos, checkboxChange, setTodos}) => {
+let List=({todos, checkboxChange, setTodos, initialTodos}) => {
+    // const initialTodos = ["Learn React", "Be Awesome", "Stay Zen"];
+    // const [todos, setTodos] = useState(initialTodos.map(todo => ({ task: todo, completed: false })));
+    
     const taskStyle = {
         textDecoration:"line-through"
     };
@@ -18,7 +17,7 @@ let List=({todos, checkboxChange, setTodos}) => {
                 {todos.map((todo, index) => (
                     <li key={index}>
                         <input type="checkbox" className="Check" checked={todo.completed} onChange={() => checkboxChange(index)}/> {" "} 
-                        <span style={todo.completed ? taskStyle : null}>{todo.task}</span>
+                        <span className="listing" style={todo.completed ? taskStyle : null}>{todo.task}</span>
                         <div className="Dates">
                             <div className="fromTo">From: {todo.fromDate}</div>
                             <div className="fromTo">To: {todo.toDate}</div>
