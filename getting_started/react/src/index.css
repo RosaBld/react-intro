@@ -2,6 +2,7 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  background-color: lightgray;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -57,6 +58,9 @@
     background: #2273EB;
     color: white;
     font-size: 5vmin;
+    &:hover {
+      box-shadow: grey 0px 5px 10px 0px;
+    }
   }
 }
 
@@ -70,7 +74,7 @@
       list-style-type:none;
       display: flex;
       flex-direction: row;
-      gap: 5vh;
+      gap: 2vh;
       .listing {
         width: 80vh;
       }
@@ -82,7 +86,31 @@
           width: 40vh;
         }
       }
+      .Modify {
+        border: none;
+        border-radius: 5px;
+        background: #2273EB;
+        color: white;
+        font-size: 15px;
+        &:hover {
+          box-shadow: grey 0px 5px 10px 0px;
+        }
+      }
     }
+  }
+}
+
+
+
+.Delete {
+  border: none;
+  border-radius: 5px;
+  background-color:#2273EB;
+  color: white;
+  width: 50vh;
+  height: 5vh;
+  &:hover {
+    box-shadow: grey 0px 5px 10px 0px;
   }
 }
 

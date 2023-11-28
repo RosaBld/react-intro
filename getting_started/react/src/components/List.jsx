@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Modify from './Modify.jsx';
         // === const myState=useState(initialTodos);
         //  +  const todos=myState[0];
         //  +  const setTodos=myState[1];
@@ -22,6 +23,7 @@ let List=({todos, checkboxChange, setTodos, initialTodos}) => {
                             <div className="fromTo">From: {todo.fromDate}</div>
                             <div className="fromTo">To: {todo.toDate}</div>
                         </div>
+                        <Modify todos={todos} setTodos={setTodos} index={index} />
                     </li>
                 ))}
                 </ul>

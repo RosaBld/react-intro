@@ -12,6 +12,8 @@ Code was then given and needed to be adapted. The idea was to explain, step by s
 
 In this ToDo App, you'll find the basics features of any ToDo App: adding a todo task with a beginning and ending date. Those tasks are displayed with all the informations that were given (dates and title). You can cross them with a checkbox so that the task will be marked as completed. You can then delete all completed tasks by clicking the delete button.
 
+You can also Modify any tasks that you registered.
+
 You can also check the calendar in the correct section. Unfortunatly, I wasn't able to display each tasks in the calendar at the corresponding date (like some known Calendar around the interweb). 
 
 ### What was learned
@@ -23,6 +25,12 @@ You can also check the calendar in the correct section. Unfortunatly, I wasn't a
 - React
 - Vite.JS
 - Components in React
+- Local Storage in React
+
+### Screenshots
+
+![screenshot app](/getting_started/react/img/ToDoApp.png)
+![screenshot app](/getting_started/react/img/ToDoApp-Display.png)
 
 #### What was used
 

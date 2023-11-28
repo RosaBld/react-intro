@@ -3,7 +3,7 @@ const DeleteTask = ({ setTodos }) => {
       setTodos((prevTodos) => prevTodos.filter((todo) => !todo.completed));
     };
   
-    return <button onClick={handleDelete}>Delete Completed Task</button>;
+    return <button className="Delete" onClick={handleDelete}>Delete Completed Task</button>;
   };
   
 export default DeleteTask;
