@@ -10,7 +10,6 @@ function MyCalendar({ todos }) {
     setValue(nextValue);
   };
 
-  
   return (
     <div>
       <Calendar
